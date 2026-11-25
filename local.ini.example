@@ -1,0 +1,19 @@
+; Copy to local.ini (never committed) and set the paths of this machine.  An environment
+; variable of the same name wins over the file.  Only RMAC and JAGINC are needed to build
+; the ROM; the rest are for the PC checks.
+;
+; RMAC: the Jaguar's assembler (rmac.exe); without it, "rmac" on the PATH.
+RMAC=C:\path\to\rmac.exe
+; JAGINC: the folder with the Jaguar SDK's include files (jaguar.inc ...).
+JAGINC=C:\path\to\jaguar\include
+; SCUMMVM_SRC: ScummVM's engines/scumm sources (tools/gen_opcodes.py regenerates the opcode
+; table from them; without it the committed csrc/scumm/opcodes_gen.h is kept).
+SCUMMVM_SRC=C:/path/to/scummvm/engines/scumm
+; SCUMMVM_EXE: ScummVM itself, for the oracle runs (tools/oracle_scummvm.ps1).
+SCUMMVM_EXE=C:\Program Files\ScummVM\scummvm.exe
+; BIGPEMU: BigPEmu's folder (tools/emu_log.py, tools/emu_shot.ps1), optional.
+BIGPEMU=C:\path\to\BigPEmu
+; NUKED_OPL: Nuked OPL3's sources (opl3.c, opl3.h) for scumm_pc --wav, optional.
+NUKED_OPL=C:/path/to/nuked-opl3
+; DESCUMM: scummvm-tools' descumm, for tools/script_dump.py, optional.
+DESCUMM=C:/path/to/descumm.exe

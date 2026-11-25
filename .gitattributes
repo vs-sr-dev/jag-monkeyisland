@@ -1,0 +1,2 @@
+# Shell scripts run inside the Docker image (Linux sh): LF, whatever core.autocrlf says.
+*.sh text eol=lf
